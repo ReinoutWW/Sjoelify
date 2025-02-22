@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sjoelify", "Sjoelify\Sjoelify.csproj", "{29E5B759-0596-4F7F-82AB-BA466206883E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sjoelify", "Sjoelify\Sjoelify.csproj", "{29E5B759-0596-4F7F-82AB-BA466206883E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sjoelify.Data", "Sjoelify.Data\Sjoelify.Data.csproj", "{BE980BE6-803B-47A4-92BE-486CECC5FA17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sjoelify.DTO", "Sjoelify.DTO\Sjoelify.DTO.csproj", "{07CE0CA2-6CA5-4074-B8C3-826512E60701}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{29E5B759-0596-4F7F-82AB-BA466206883E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29E5B759-0596-4F7F-82AB-BA466206883E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29E5B759-0596-4F7F-82AB-BA466206883E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE980BE6-803B-47A4-92BE-486CECC5FA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE980BE6-803B-47A4-92BE-486CECC5FA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE980BE6-803B-47A4-92BE-486CECC5FA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE980BE6-803B-47A4-92BE-486CECC5FA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07CE0CA2-6CA5-4074-B8C3-826512E60701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07CE0CA2-6CA5-4074-B8C3-826512E60701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07CE0CA2-6CA5-4074-B8C3-826512E60701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07CE0CA2-6CA5-4074-B8C3-826512E60701}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
