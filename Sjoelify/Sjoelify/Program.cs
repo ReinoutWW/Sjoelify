@@ -1,10 +1,13 @@
 using Sjoelify.Components;
+using Sjoelify.UI.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddUIComponents();
 
 var app = builder.Build();
 

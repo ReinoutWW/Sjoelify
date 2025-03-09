@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\Forms\" />
+    <Folder Include="Components\Templates\" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Radzen.Blazor" Version="6.2.4" />
+		<PackageReference Include="System.Collections" Version="4.3.0" />
+	</ItemGroup>
+
+</Project>

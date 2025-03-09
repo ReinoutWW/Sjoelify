@@ -1,0 +1,88 @@
+﻿@page "/form-old"
+
+<div class="container">
+    <h2>Form</h2>
+    <EditForm Model="@session">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div class="form-group">
+            <label for="note">Note</label>
+            <InputText id="note" class="form-control" @bind-Value="session.Note" />
+            <ValidationMessage For="@(() => session.Note)" />
+        </div>
+        <div class="form-group">
+            <label for="note">Amount</label>
+            <InputNumber id="amount" class="form-control" @bind-Value="session.Amount" />
+            <ValidationMessage For="@(() => session.Amount)" />
+
+        </div>
+        <div class="form-group">
+            <label for="start">Start</label>
+            <input id="start" type="datetime"
+                   class="form-control"
+                   @bind="session.Start" />
+            <ValidationMessage For="@(() => session.Start)" />
+        </div>
+        <div class="form-group">
+            <label for="end">End</label>
+            <input id="end" type="datetime" class="form-control" @bind="session.End" />
+            <ValidationMessage For="@(() => session.End)" />
+        </div>
+        <div class="form-group">
+            <label for="kind">Kind of Food</label>
+            <select id="kind" class="form-control" @bind="session.KindOfFood">
+                <option value="SOLID">Solid</option>
+                <option value="LIQUID">Liquid</option>
+            </select>
+            <ValidationMessage For="@(() => session.KindOfFood)" />
+        </div>
+    </EditForm>
+
+    <!-- Output -->
+    <div class="card">
+        <div class="card-header">
+            Output
+        </div>
+        <div class="card-body">
+            <div>
+                <label class="mr-2">Note:</label>
+                <label>@session.Note</label>
+            </div>
+            <div>
+                <label class="mr-2">Amount:</label>
+                <label>@session.Amount</label>
+            </div>
+            <div>
+                <label class="mr-2">Start:</label>
+                <label>@session.Start</label>
+            </div>
+            <div>
+                <label class="mr-2">End:</label>
+                <label>@session.End</label>
+            </div>
+            <div>
+                <label class="mr-2">Kind of food:</label>
+                <label>@session.KindOfFood</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private FeedingSession session = new FeedingSession();
+
+    public class FeedingSession
+    {
+        public FoodKind KindOfFood { get; set; }
+        public string Note { get; set; }
+        public decimal Amount { get; set; }
+        public DateTime Start { get; set; }
+        public DateTime End { get; set; }
+    }
+
+    public enum FoodKind
+    {
+        SOLID,
+        LIQUID
+    }
+}
